@@ -1,9 +1,9 @@
 import { type ReactNode, Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
+import { SidebarProvider } from "@/components/ui/sidebar";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import AppErrorPage from "@/features/errors/app-error";
-import { SidebarProvider } from "@/components/ui/sidebar";
-import { AppSidebar } from "@/features/sidebar/app-sidebar";
+import { AppSidebar } from "@/features/sidebar/components/app-sidebar";
 
 export default function AppProvider({ children }: { children: ReactNode }) {
   return (
